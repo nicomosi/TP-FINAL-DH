@@ -1,0 +1,399 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header{
+  background-color: #B46EFF;
+  box-shadow: 1px 1px 12px rgba(156, 156, 156, 0.8);
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+
+main{
+   background-color: rgb(229, 236, 244, 0.5);
+  position: absolute;
+}
+/* }rgba(255, 230, 210, 0.27);  */
+
+main h4{
+  color:rgb(89, 88, 88);
+  margin: 3vh;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.producto{
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(198, 198, 198, 0.35);
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px rgba(172, 172, 172, 0.31);
+  color:;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 12px;
+}
+.producto a{
+  color:rgb(77, 77, 77);
+  font-weight: bold;
+}
+.producto p{
+  margin: 0;
+  color: rgb(149, 149, 149);
+}
+
+.descripcion-producto span{
+  color: rgb(110, 109, 109);
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.descripcion-producto span i{
+  color:rgba(92, 255, 196, 0.77);
+  font-size: 1.4em;
+}
+/* Acá TERMINAN los estilos generales para cualquier query */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:620px){
+*{
+  margin: 0;
+}
+
+/*------------------------*/
+/* Estilos header celular */
+
+header{
+  height: 50px;
+}
+/* Este es el header primario  */
+.contenedor-header-prim{
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+}
+.contenedor-logo{
+  align-items: center;
+  display: flex;
+  margin-left: 4vw;
+  align-self: center;
+}
+.contenedor-logo h4{
+  margin: 0;
+}
+/* Este es el contenedor del carrito y el boton del menu */
+.contenedor-menu-btn{
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4vw;
+}
+.contenedor-hamburguesa{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  order: 2;
+}
+.btn-hamburguesa{
+  background-color:rgb(138, 79, 255, 0.01);
+  border: none;
+}
+.btn-hamburguesa .fa-bars{
+  color: rgb(214, 210, 250);
+  font-size: 1.3em;
+}
+.dropdown-menu {
+  left: -200px;
+  position: absolute;
+  transform: translate3d(-30px, 28px, 10px);
+  top: 20px;
+  will-change: transform;
+}
+.dropdown-menu a:hover{
+  text-decoration: none;
+}
+.carrito{
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  order: 1;
+  width: 45px;
+}
+.carrito .fa-shopping-cart{
+  color: rgb(214, 210, 250);
+  font-size: 1.3em;
+}
+/* Este es el contenedor del header secundario, en la version mobile no se muestra */
+.contenedor-header-sec{
+  display: none;
+}
+
+
+/*--------------------------*/
+/* Estilos del MAIN celular */
+
+main{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  top:50px;
+}
+
+.main-banner{
+  display: none;
+}
+/* main-area-productos es el contenedor general de todos los productos.  */
+.main-area-productos{
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+}
+/* main-prod-mas-vendidos es un contenedor dentro de main-area-productos  */
+.main-prod-mas-vendidos{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+/* producto es el contenedor general de toda la tarjeta de un producto */
+.producto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh 1vw;
+}
+/* imagen-producto es el contenedor de la imagen */
+.imagen-producto{
+  width: 200px;
+}
+.producto img{
+  height: 200px;
+  width: 200px;
+  margin-bottom: 10px;
+
+}
+/* descripción del producto es el contenedor que tiene el titulo (con link), la info, el precio del producto, el carrito y el corazón*/
+.descripcion-producto{
+  width: 200px;
+}
+
+}
+/* Acá termina el query para celulares */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Acá empieza el query para   */
+@media (min-width:620px){
+
+*{
+ margin: 0;
+}
+
+header{
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedor-header-prim{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  height: 40px;
+}
+.contenedor-logo{
+  align-items: center;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+}
+.contenedor-logo h4{
+  margin: 0;
+}
+.contenedor-menu-btn{
+  align-items: center;
+  display: flex;
+  margin-right: 9vw;
+  justify-content: center;
+  width: 5vw;
+}
+.contenedor-menu-btn .fa-shopping-cart{
+  color: rgb(214, 210, 250);
+  font-size: 1.3em;
+}
+.contenedor-menu-btn .fa-shopping-cart:hover{
+  color:#FFEDC1;
+  transition: 0.4s;
+}
+.contenedor-hamburguesa{
+  display: none;
+}
+
+
+
+.contenedor-header-sec{
+  display: flex;
+  flex-grow: 1;
+  height: 40px;
+  justify-content: space-between;
+  width: 100%;
+}
+.contenedor-header-sec .nav-principal {
+  align-items: center;
+  display: flex;
+  margin-left: 7vw;
+  width: 70%;
+}
+.contenedor-header-sec .nav-principal ul{
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+.contenedor-header-sec .nav-principal ul li{
+margin: 0 2vw;
+}
+.contenedor-header-sec .nav-principal ul li a{
+  color: white;
+}
+
+.contenedor-header-sec .nav-secundario {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4vw;
+  width: 30%;
+}
+
+.contenedor-header-sec .nav-secundario ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.contenedor-header-sec .nav-secundario ul li{
+  margin: 0 2vw;
+}
+.contenedor-header-sec .nav-secundario ul li a{
+  color: white;
+}
+.contenedor-header-sec ul li a:hover{
+  color: #FFEDC1;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+main {
+  top: 80px;
+  justify-content: center;
+  width: 100%;
+}
+.main-banner{
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  margin: 0;
+  width: 100%;
+}
+
+.main-banner img{
+  height: 100%;
+  width: 100%;s
+}
+
+main h4{
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+
+.main-area-productos{
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+/* main-prod-mas-vendidos es un contenedor dentro de main-area-productos  */
+.main-prod-mas-vendidos{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+/* producto es el contenedor general de toda la tarjeta de un producto */
+.producto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh 1vw;
+}
+/* imagen-producto es el contenedor de la imagen */
+.imagen-producto{
+  display: flex;
+  justify-content: center;
+  width: 250px;
+}
+.imagen-producto img{
+  height: 200px;
+  width: 200px;
+  margin-bottom: 10px;
+
+}
+/* descripción del producto es el contenedor que tiene el titulo (con link), la info, el precio del producto, el carrito y el corazón*/
+.descripcion-producto{
+  width: 200px;
+}
+
+
+
+
+}
