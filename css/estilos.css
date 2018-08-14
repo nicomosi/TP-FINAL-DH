@@ -256,7 +256,7 @@ justify-content: center;
 
 
 
-/*Acá empieza el query para   */
+/*Acá empieza el query para  Ipad */
 @media (min-width:620px){
 
 *{
@@ -416,15 +416,17 @@ justify-content: center;
   width: 200px;
 }
 
-/*Estilos del Faq */
+/*Estilos del Faq para Ipad*/
+
 .faq{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  max-width: 1400px;
+  align-content: center;
+  margin: 0 auto;
 }
 .faq>article{
-  margin: 40px;
-  max-width: 70vw;
+  margin: 20px;
 }
 .faq>article>section{
   display: flex;
@@ -437,6 +439,44 @@ justify-content: center;
 .faq>article>h1{
   font-size: 1.2em;
 }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Media Query Desktop */
+@media (min-width:768px){
+/* Acá empiezan los estilos del Faq para Desktop */
+  .faq{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    align-content: center;
+    margin: 0 auto;
+  }
+  .faq>article{
+    margin: 40px;
+    max-width: 90vw;
+  }
+  .faq>article>section{
+    display: flex;
+  }
+  .faq>h1{
+    font-size: 1.6em;
+    margin: 15px;
+    text-decoration: underline;
+  }
+  .faq>article>h1{
+    font-size: 1.2em;
+  }
 
 
 
