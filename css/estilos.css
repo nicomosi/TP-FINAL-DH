@@ -13,7 +13,7 @@ header{
 
 
 main{
-   background-color: rgb(229, 236, 244, 0.5);
+  background-color: rgb(229, 236, 244, 0.5);
   position: absolute;
 }
 /* }rgba(255, 230, 210, 0.27);  */
@@ -32,7 +32,6 @@ main h4{
   border: 1px solid rgba(198, 198, 198, 0.35);
   border-radius: 5px;
   box-shadow: 1px 1px 8px rgba(172, 172, 172, 0.31);
-  color:;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -58,25 +57,36 @@ main h4{
   color:rgba(92, 255, 196, 0.77);
   font-size: 1.4em;
 }
+/*Estilos Footer Celular*/
+footer{
+  background-color: #B46EFF;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 10px 0px;
+  display: none;/*ARRERGLAR POSICION DEL FOOTER Y SACAR DISPLAY NONE*/
+}
+footer>p{
+  margin: 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+footer>ul{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+footer>ul>li{
+  float: left;
+  padding: 0px 3px 0px 3px;
+  list-style: none;
+}
+footer>ul>li>a>img{
+  width: 15px;
+}
 /* Acá TERMINAN los estilos generales para cualquier query */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -204,6 +214,19 @@ justify-content: center;
 /* descripción del producto es el contenedor que tiene el titulo (con link), la info, el precio del producto, el carrito y el corazón*/
 .descripcion-producto{
   width: 200px;
+}
+
+/* Estilos del Faq para celulares */
+.faq>article{
+  margin: 15px;
+}
+.faq>h1{
+  font-size: 1.6em;
+  margin: 15px;
+  text-decoration: underline;
+}
+.faq>article>h1{
+  font-size: 1.2em;
 }
 
 }
@@ -348,7 +371,7 @@ main {
 
 .main-banner img{
   height: 100%;
-  width: 100%;s
+  width: 100%;
 }
 
 main h4{
@@ -392,6 +415,36 @@ justify-content: center;
 .descripcion-producto{
   width: 200px;
 }
+
+/*Estilos del Faq */
+.faq{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.faq>article{
+  margin: 40px;
+  max-width: 70vw;
+}
+.faq>article>section{
+  display: flex;
+}
+.faq>h1{
+  font-size: 1.6em;
+  margin: 15px;
+  text-decoration: underline;
+}
+.faq>article>h1{
+  font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
 
 
 
