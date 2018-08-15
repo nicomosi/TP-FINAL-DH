@@ -3,20 +3,29 @@
   padding: 0;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 header{
   background-color: #B46EFF;
   box-shadow: 1px 1px 12px rgba(156, 156, 156, 0.8);
   width: 100%;
-  position: fixed;
   z-index: 10;
 }
 
 
 main{
   background-color: rgb(229, 236, 244, 0.5);
-  position: absolute;
 }
 /* }rgba(255, 230, 210, 0.27);  */
+
+.wrapper{
+  min-height: 100vh;
+}
 
 main h4{
   color:rgb(89, 88, 88);
@@ -57,16 +66,18 @@ main h4{
   color:rgba(92, 255, 196, 0.77);
   font-size: 1.4em;
 }
-/*Estilos Footer Celular*/
+/* Acá TERMINAN los estilos generales para cualquier query */
+
+/*Estilos Footer Celular MOBILE FIRST*/
 footer{
   background-color: #B46EFF;
   width: 100%;
-  position: fixed;
+  position: relative;
   bottom: 0;
   display: flex;
   flex-direction: column;
   padding: 10px 0px 10px 0px;
-  display: none;/*ARRERGLAR POSICION DEL FOOTER Y SACAR DISPLAY NONE*/
+  /*ARRERGLAR POSICION DEL FOOTER Y SACAR DISPLAY NONE*/
 }
 footer>p{
   margin: 0;
@@ -86,7 +97,6 @@ footer>ul>li{
 footer>ul>li>a>img{
   width: 15px;
 }
-/* Acá TERMINAN los estilos generales para cualquier query */
 
 
 
@@ -103,6 +113,7 @@ footer>ul>li>a>img{
 header{
   height: 50px;
 }
+
 /* Este es el header primario  */
 .contenedor-header-prim{
   display: flex;
@@ -477,7 +488,10 @@ justify-content: center;
   .faq>article>h1{
     font-size: 1.2em;
   }
-
+/*Acá empiezan los estilos del footer para Desktop */
+  footer{
+    font-size: 1.2em;
+  }
 
 
 
