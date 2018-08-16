@@ -20,6 +20,7 @@ header{
 
 main{
   background-color: rgb(229, 236, 244, 0.5);
+  overflow: hidden;
 }
 /* }rgba(255, 230, 210, 0.27);  */
 
@@ -98,7 +99,114 @@ footer>ul>li>a>img{
   width: 15px;
 }
 
+/* 
 
+//////////// ESTILO PARA EL LOGIN //////////
+
+*/
+
+
+.container{
+  border: solid 1px #ddd;
+  box-shadow: 0 0 10px #ddd;
+  background-color: white;
+  padding: 35px 15px;
+  margin: 5% auto;
+}
+
+.container h3{
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0% auto 10%;
+}
+
+.login{
+  float: right;
+  margin: 5%;   
+  width: 400px;
+}
+
+.container label{
+  color: #666;
+  font-weight: 700;
+}
+.form-input {
+  color: #495057;
+  margin: 3% 0% 5%;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+}
+
+.form-row {
+  display: block;
+  width: 100%;
+ 
+}
+
+
+.container button {
+  margin-top: 15px;
+  background: #FF7519;
+  color: #FFF;
+  border-color: #FF7519;
+  border-radius: 3px;
+  cursor: pointer;
+  height: calc(2.25rem + 2px);
+}
+
+a{ 
+  
+}
+.login-form a{
+  
+  float: right;
+  text-decoration: none;
+  color: #888;
+  font-style: oblique;
+  font-size: 0.95em;;
+}
+
+.login-extern{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 20% 10%;
+}
+
+
+
+/* 
+
+//////////// ESTILO PARA EL REGISTRO //////////
+
+*/
+
+form.signin-form {
+  margin-bottom: 0;
+}
+
+.signin{
+
+  width: 600px;
+}
+
+.signin-form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.signin-group-form{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  width: 48%;
+  
+
+}
+.politics label{
+  font-size: 0.8em;
+}
 
 
 
@@ -181,14 +289,14 @@ header{
 /*--------------------------*/
 /* Estilos del MAIN celular */
 
-main{
+/* main{
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
   width: 100%;
   top:50px;
-}
+} */
 
 .main-banner{
   display: none;
@@ -494,13 +602,27 @@ justify-content: center;
   }
 
 
+}
+/* estilo para login y registro */
+@media (max-width: 620px){
+  .login{
+      float: none;
+      width: auto;
+  }   
 
+  .signin {
+      width: auto;
+      margin: 5%;
+  }
 
-
-
-
-
-
-
-
+  .signin-group-form {
+      width: 100%;
+  }
+ 
+}
+@media (max-width: 620px){
+.login{
+  float: none;
+  width: auto;
+} 
 }
