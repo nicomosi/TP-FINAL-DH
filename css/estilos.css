@@ -204,11 +204,17 @@ form.signin-form {
   
 
 }
+
+.politics {
+  display: flex;
+}
 .politics label{
   font-size: 0.8em;
 }
 
-
+.politics input{
+  margin-right: 0.8em;
+}
 
 @media (max-width:620px){
 *{
